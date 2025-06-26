@@ -1,0 +1,86 @@
+frontend:
+  - nide
+  - react
+  - nextjs
+  - vscode
+  - postman
+  - figma
+
+backend:
+  - nide
+  - docker
+  - mysql
+  - mongodb
+  - postgres
+  - git
+  - java
+  - springboot
+  - vscode
+
+fullstack:
+  - nide
+  - react
+  - nextjs
+  - docker
+  - mysql
+  - mongodb
+  - postgres
+  - git
+  - java
+  - springboot
+  - vscode
+  - postman
+  - figma
+
+devops:
+  - docker
+  - git
+  - vscode
+  - postman
+  - prometheus
+  - grafana
+  - netdata
+  - htop
+  - terraform
+  - ansible
+  - helm
+  - kubectl
+  - jenkins
+  - awscli
+  - azurecli
+  - gcloud
+
+datascience:
+  - python
+  - vscode
+  - docker
+  - git
+  - jupyter
+  - postman
+  - mongodb
+  - mysql
+
+dotnet:
+  - donet
+  - vscode
+  - git
+  - postman
+  - docker
+
+java_dev:
+  - java
+  - springboot
+  - maven
+  - vscode
+  - git
+  - docker
+
+cloud:
+  - awscli
+  - azurecli
+  - gcloud
+  - terraform
+  - kubectl
+  - helm
+  - git
+  - vscode

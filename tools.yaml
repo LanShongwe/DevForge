@@ -1,0 +1,217 @@
+ansible:
+  name: Ansible
+  version: latest
+  install_script: ansible.sh
+  size: 100MB
+  ram: 256MB
+
+awscli:
+  name: AWS CLI
+  version: v2
+  install_script: awscli.sh
+  size: 150MB
+  ram: 256MB
+
+azurecli:
+  name: Azure CLI
+  version: latest
+  install_script: azurecli.sh
+  size: 200MB
+  ram: 256MB
+
+docker:
+  name: Docker Engine
+  version: latest
+  install_script: docker.sh
+  size: 400MB
+  ram: 512MB
+  group: docker
+
+donet:
+  name: .NET SDK
+  version: latest
+  install_script: donet.sh
+  size: 500MB
+  ram: 1024MB
+
+figma:
+  name: Figma (Web)
+  version: latest
+  install_script: figma.sh
+  size: 0MB
+  ram: 64MB
+
+gcloud:
+  name: Google Cloud SDK
+  version: latest
+  install_script: gcloud.sh
+  size: 300MB
+  ram: 256MB
+
+git:
+  name: Git
+  version: latest
+  install_script: git.sh
+  size: 100MB
+  ram: 128MB
+
+grafana:
+  name: Grafana
+  version: latest
+  install_script: grafana.sh
+  size: 250MB
+  ram: 512MB
+
+helm:
+  name: Helm
+  version: latest
+  install_script: helm.sh
+  size: 50MB
+  ram: 128MB
+
+htop:
+  name: htop
+  version: latest
+  install_script: htop.sh
+  size: 50MB
+  ram: 64MB
+
+java:
+  name: OpenJDK
+  version: 17
+  install_script: java.sh
+  size: 200MB
+  ram: 512MB
+
+jenkins:
+  name: Jenkins
+  version: latest
+  install_script: jenkins.sh
+  size: 300MB
+  ram: 1024MB
+
+kubectl:
+  name: Kubernetes CLI (kubectl)
+  version: latest
+  install_script: kubectl.sh
+  size: 100MB
+  ram: 256MB
+
+maven:
+  name: Apache Maven
+  version: latest
+  install_script: maven.sh
+  size: 150MB
+  ram: 256MB
+
+mobaxterm:
+  name: MobaXterm (Windows)
+  version: latest
+  install_script: mobaxterm.sh
+  size: 0MB
+  ram: 0MB
+
+mongodb:
+  name: MongoDB
+  version: 8.0
+  install_script: mongodb.sh
+  size: 250MB
+  ram: 256MB
+
+mysql:
+  name: MySQL Server
+  version: latest
+  install_script: mysql.sh
+  size: 300MB
+  ram: 512MB
+
+netdata:
+  name: Netdata
+  version: latest
+  install_script: netdata.sh
+  size: 300MB
+  ram: 512MB
+
+nextjs:
+  name: Next.js
+  version: latest
+  install_script: nextjs.sh
+  size: 150MB
+  ram: 256MB
+
+nginx:
+  name: Nginx
+  version: stable
+  install_script: nginx.sh
+  size: 100MB
+  ram: 128MB
+
+nide:
+  name: Node.js
+  version: 20.x
+  install_script: node.sh
+  size: 150MB
+  ram: 512MB
+
+postgres:
+  name: PostgreSQL
+  version: 15
+  install_script: postgres.sh
+  size: 500MB
+  ram: 1024MB
+
+postman:
+  name: Postman
+  version: latest
+  install_script: postman.sh
+  size: 200MB
+  ram: 256MB
+
+prometheus:
+  name: Prometheus
+  version: latest
+  install_script: prometheus.sh
+  size: 250MB
+  ram: 256MB
+
+python:
+  name: Python 3
+  version: 3.12
+  install_script: python.sh
+  size: 150MB
+  ram: 256MB
+
+react:
+  name: React
+  version: latest
+  install_script: react.sh
+  size: 100MB
+  ram: 256MB
+
+rust:
+  name: Rust
+  version: stable
+  install_script: rust.sh
+  size: 200MB
+  ram: 256MB
+
+springboot:
+  name: Spring Boot
+  version: latest
+  install_script: springboot.sh
+  size: 300MB
+  ram: 512MB
+
+terraform:
+  name: Terraform
+  version: latest
+  install_script: terraform.sh
+  size: 100MB
+  ram: 256MB
+
+vscode:
+  name: Visual Studio Code
+  version: latest
+  install_script: vscode.sh
+  size: 200MB
+  ram: 256MB
