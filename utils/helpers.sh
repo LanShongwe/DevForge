@@ -1,34 +1,37 @@
 #!/bin/bash
 
-# helpers.sh — General helper functions for profile/tool management
+# helpers.sh - Tool/Profile helpers
+
+TOOLS_FILE="tools.yaml"
+PROFILES_FILE="profiles.yaml"
+
+# Check for yq
+if ! command -v yq &>/dev/null; then
+  echo "❌ 'yq' is required but not installed. Run: sudo apt install yq -y"
+  exit 1
+fi
 
 list_profiles() {
-  echo "----------------------------------------"
-  echo "Available Profiles:"
-  yq e 'keys | .[]' profiles.yaml
-  echo "----------------------------------------"
+  yq e 'keys | .[]' "$PROFILES_FILE"
 }
 
 list_tools() {
-  echo "----------------------------------------"
-  echo "Available Tools:"
-  yq e 'keys | .[]' tools.yaml
-  echo "----------------------------------------"
+  yq e 'keys | .[]' "$TOOLS_FILE"
 }
 
-load_profiles() {
-  local profile=$1
-  yq e ".$profile[]" profiles.yaml
+load_profile() {
+  local profile="$1"
+  yq e ".$profile[]" "$PROFILES_FILE"
 }
 
 install_tool() {
-  local tool=$1
-  local script="install_scripts/$(yq e ".${tool}.install_script" tools.yaml)"
-  if [[ -f "$script" ]]; then
-    log_info "Installing $tool..."
-    bash "$script"
-  else
-    log_error "Install script for $tool not found at $script"
+  local tool="$1"
+  local script
+  script=$(yq e ".$tool.install_script" "$TOOLS_FILE")
+  if [[ -z "$script" || ! -f "install_scripts/$script" ]]; then
+    log_error "Script not found for $tool."
     return 1
   fi
+  chmod +x "install_scripts/$script"
+  "./install_scripts/$script"
 }
